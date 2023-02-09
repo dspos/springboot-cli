@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: boot-cli
+  datasource:
+    url: jdbc:mysql://192.168.233.128:3306/spring_practice?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  data:
+    redis:
+      host: 192.168.233.128
+      port: 6379
+      database: 0
+      timeout: 5000
+      lettuce:
+        pool:
+          max-active: 20
+          max-wait: -1
+          max-idle: 8
+          min-idle: 0
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
