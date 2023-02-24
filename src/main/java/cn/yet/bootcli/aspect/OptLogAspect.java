@@ -54,9 +54,9 @@ public class OptLogAspect {
         // 操作模块
         operationLog.setOptModule(optLog.optModule());
         // 操作类型
-        operationLog.setOptType(optLog.operType());
+        operationLog.setOptType(optLog.optType());
         // 操作描述
-        operationLog.setOptDesc(optLog.operDesc());
+        operationLog.setOptDesc(optLog.optDesc());
         // 获取请求的类名
         String className = joinPoint.getTarget().getClass().getName();
         // 获取请求的方法名

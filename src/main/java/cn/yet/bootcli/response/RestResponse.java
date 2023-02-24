@@ -12,7 +12,7 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class RestResponse<T> {
 
-    private int code;
+    private Integer code;
 
     private String msg;
 
